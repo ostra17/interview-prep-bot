@@ -1,0 +1,43 @@
+[
+  {"position": "ai_engineer", "level": "junior", "type": "theory", "text": "Что такое prompt engineering и почему формулировка промпта влияет на качество ответа модели?"},
+  {"position": "ai_engineer", "level": "junior", "type": "theory", "text": "Объясни разницу между fine-tuning и few-shot prompting. Когда что уместнее?"},
+  {"position": "ai_engineer", "level": "junior", "type": "theory", "text": "Что такое temperature у LLM и как она влияет на результат?"},
+  {"position": "ai_engineer", "level": "junior", "type": "behavioral", "text": "Расскажи о своём последнем pet-проекте с использованием AI — что делал, какие сложности были?"},
+  {"position": "ai_engineer", "level": "junior", "type": "coding", "text": "Напиши функцию, которая разбивает длинный текст на чанки фиксированного размера с перекрытием (overlap) для последующей индексации в vector DB."},
+  {"position": "ai_engineer", "level": "junior", "type": "coding", "text": "Напиши функцию, которая считает примерное количество токенов в строке (без использования внешних библиотек токенизации)."},
+
+  {"position": "ai_engineer", "level": "middle", "type": "theory", "text": "Как ты спроектируешь RAG-пайплайн для базы знаний из 10000 документов?"},
+  {"position": "ai_engineer", "level": "middle", "type": "theory", "text": "Как выбрать между несколькими vector DB (Pinecone, Weaviate, Chroma) для конкретного проекта?"},
+  {"position": "ai_engineer", "level": "middle", "type": "behavioral", "text": "Расскажи о случае, когда твой AI-агент давал галлюцинации в проде. Как ты это обнаружил и решил?"},
+  {"position": "ai_engineer", "level": "middle", "type": "behavioral", "text": "Опиши ситуацию, когда пришлось объяснять нетехническому стейкхолдеру ограничения LLM."},
+  {"position": "ai_engineer", "level": "middle", "type": "coding", "text": "Реализуй простой rate limiter для вызовов LLM API с ограничением N запросов в минуту."},
+  {"position": "ai_engineer", "level": "middle", "type": "coding", "text": "Напиши функцию retry с экспоненциальной задержкой для вызовов внешнего API, которая может падать по таймауту."},
+
+  {"position": "ai_engineer", "level": "senior", "type": "theory", "text": "Как бы ты спроектировал систему мониторинга качества ответов LLM-агента в проде без ручной разметки каждого ответа?"},
+  {"position": "ai_engineer", "level": "senior", "type": "theory", "text": "Как организовать A/B тестирование разных промптов или моделей в проде?"},
+  {"position": "ai_engineer", "level": "senior", "type": "behavioral", "text": "Опиши ситуацию, когда тебе пришлось убедить команду отказаться от архитектурно неверного решения с LLM."},
+  {"position": "ai_engineer", "level": "senior", "type": "behavioral", "text": "Расскажи, как ты балансировал между скоростью выхода фичи и техническим качеством в условиях дедлайна."},
+  {"position": "ai_engineer", "level": "senior", "type": "coding", "text": "Спроектируй (архитектурно, псевдокод) систему очередей для агента, который параллельно обрабатывает до 1000 сессий с учётом rate limits провайдера LLM."},
+  {"position": "ai_engineer", "level": "senior", "type": "coding", "text": "Как бы ты реализовал кэширование ответов LLM для похожих (но не идентичных) запросов?"},
+
+  {"position": "python_developer", "level": "junior", "type": "theory", "text": "В чём разница между списком (list) и кортежем (tuple) в Python?"},
+  {"position": "python_developer", "level": "junior", "type": "theory", "text": "Что такое GIL и как он влияет на многопоточность в Python?"},
+  {"position": "python_developer", "level": "junior", "type": "theory", "text": "Чем отличаются `is` и `==` в Python?"},
+  {"position": "python_developer", "level": "junior", "type": "behavioral", "text": "Расскажи про свой последний проект на Python — что делал, с какими библиотеками работал?"},
+  {"position": "python_developer", "level": "junior", "type": "coding", "text": "Напиши функцию, которая проверяет, является ли строка палиндромом, без использования срезов [::-1]."},
+  {"position": "python_developer", "level": "junior", "type": "coding", "text": "Напиши функцию, которая находит все дубликаты в списке чисел."},
+
+  {"position": "python_developer", "level": "middle", "type": "theory", "text": "Объясни разницу между `__new__` и `__init__`. Когда переопределяют `__new__`?"},
+  {"position": "python_developer", "level": "middle", "type": "theory", "text": "Что такое декораторы и как они работают? Приведи пример."},
+  {"position": "python_developer", "level": "middle", "type": "behavioral", "text": "Расскажи про случай, когда ты нашёл и исправил серьёзный performance-баг в проде."},
+  {"position": "python_developer", "level": "middle", "type": "behavioral", "text": "Как ты организуешь тестирование в своих проектах — какие виды тестов используешь?"},
+  {"position": "python_developer", "level": "middle", "type": "coding", "text": "Реализуй LRU-кэш с ограничением по размеру без использования functools.lru_cache."},
+  {"position": "python_developer", "level": "middle", "type": "coding", "text": "Напиши генератор, который лениво выдаёт числа Фибоначчи."},
+
+  {"position": "python_developer", "level": "senior", "type": "theory", "text": "Как бы ты спроектировал систему миграций схемы БД с нулевым даунтаймом для highload-сервиса?"},
+  {"position": "python_developer", "level": "senior", "type": "theory", "text": "Как ты выбираешь между синхронным и асинхронным подходом (asyncio) для нового сервиса?"},
+  {"position": "python_developer", "level": "senior", "type": "behavioral", "text": "Опиши случай, когда пришлось принимать архитектурное решение под давлением дедлайна."},
+  {"position": "python_developer", "level": "senior", "type": "behavioral", "text": "Как ты подходишь к code review в команде — на что обращаешь внимание в первую очередь?"},
+  {"position": "python_developer", "level": "senior", "type": "coding", "text": "Спроектируй rate-limited API gateway на asyncio, который распределяет нагрузку между несколькими backend-инстансами."},
+  {"position": "python_developer", "level": "senior", "type": "coding", "text": "Как бы ты реализовал распределённую блокировку (distributed lock) для нескольких инстансов сервиса?"}
+]
